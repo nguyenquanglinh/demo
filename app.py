@@ -9,4 +9,4 @@ def render_static( ):
 
 
 if __name__ == '__main__':
-    app.run( port=70000)
+    app.run( port=5000)
