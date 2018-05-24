@@ -1,3 +1,6 @@
+"scripts": {
+    "start": "node hello.js"
+},
 $( document ).ready(function() {
 
 
