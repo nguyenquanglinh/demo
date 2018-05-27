@@ -1,8 +1,4 @@
-"scripts": {
-    "start": "node hello.js"
-},
 $( document ).ready(function() {
-
 
 function formatAMPM(date) {
     var hours = date.getHours();
@@ -13,12 +9,12 @@ function formatAMPM(date) {
     var strTime ="time: "+ hours + ':' + minutes +'h '+ 'Date: '+day+':'+month+':'+year
     return strTime;
 }
-
 //-- No use time. It is a javaScript effect.
 function insertChat(who, text, time){
     if (time === undefined){
         time = 0;
     }
+
     var control = "";
     var date = formatAMPM(new Date());
     control = '<li style="width:100%">' +

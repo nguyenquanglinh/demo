@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <p>Cập nhật ảnh đại diện</p>
+</head>
+
+<body>
+<form action="/upload" method="post" enctype="multipart/form-data" >
+    <label class="btn btn-default btn-file">
+        mở ảnh <input  type="file" name="image" style="display: none;">
+    </label>
+    <input type="submit" value="Ok" class="btn btn-primary">
+</form>
+
+<div class="text-center">
+    {% if init %}
+        {% if invalidImage %}
+            <div class="alert alert-danger" style="margin-top:18px;">
+                <strong>Error</strong> Your image contain invalid content !
+            </div>
+        {% else %}
+            <div class="alert alert-success" style="margin-top:18px;">
+                <strong>Success!</strong> Your image was upload successfully
+            </div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>
